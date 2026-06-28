@@ -45,11 +45,11 @@
 .bkFaseHdr.h-sem{background:#7a4b1a}
 .bkFaseHdr.h-ter{background:#5a5a8a}
 .bkFaseHdr.h-fin{background:#8a6a00}
-.bkJogo{display:grid;grid-template-columns:36px 1fr;border-bottom:1px solid #edf0f4;background:#fff}
+.bkJogo{display:flex;flex-direction:row;border-bottom:1px solid #edf0f4;background:#fff;border-radius:6px;margin:4px 6px;box-shadow:0 1px 3px #0001}
 .bkJogo:last-child{border-bottom:0}
-.bkJogoNum{background:#f0f5fa;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:900;color:#1F4E78;border-right:1px solid #dde3ea;writing-mode:vertical-rl;letter-spacing:1px}
-.bkJogoBody{padding:0}
-.bkJogoTime{display:flex;align-items:center;padding:7px 10px;gap:8px;font-size:13px;font-weight:700;color:#222}
+.bkJogoNum{background:#1F4E78;color:#fff;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:900;min-width:36px;padding:0 5px;white-space:nowrap;border-radius:6px 0 0 6px;flex-shrink:0}
+.bkJogoBody{padding:0;flex:1;min-width:0}
+.bkJogoTime{display:flex;align-items:center;padding:6px 10px;gap:6px;font-size:12px;font-weight:700;color:#222;border-left:3px solid transparent}
 .bkJogoTime+.bkJogoTime{border-top:1px solid #f0f3f7}
 .bkJogoTime.tw{color:#056b05}
 .bkJogoTime.tl{color:#b0b8c2;font-weight:400}
@@ -58,10 +58,10 @@
 .bkJogoTime .tplacar{font-size:14px;font-weight:900;min-width:22px;text-align:center;background:#eef3f8;border-radius:5px;padding:1px 6px}
 .bkJogoTime.tw .tplacar{background:#d4f0d6;color:#056b05}
 .bkJogoTime.tl .tplacar{background:#f0f0f0;color:#aaa}
-@media(max-width:700px){.wrap{padding:8px}.box{border-radius:14px;padding:10px}h1{font-size:20px}.small{font-size:11px}.controls,.resumoP{grid-template-columns:1fr}.hideMobile{display:none}table{font-size:12px}th,td{padding:7px 5px}.palpiteTable th:nth-child(2){width:auto}.jogoCell{min-width:0}.matchLine{grid-template-columns:1fr;gap:3px}.teamA,.teamB{text-align:center;font-size:12px}.scoreCenter{order:2}.teamA{order:1}.teamB{order:3}.flag{font-size:17px}.flagImg{width:24px;height:17px}.scoreBox{min-width:24px;padding:3px 5px}.resumoP .card{padding:7px}.card b{font-size:18px}.oficialLine{font-size:11px}.bkWrap{display:none}.bkMobile{display:block}}
+@media(max-width:700px),(max-width:860px) and (orientation:portrait){.wrap{padding:8px}.box{border-radius:14px;padding:10px}h1{font-size:20px}.small{font-size:11px}.controls,.resumoP{grid-template-columns:1fr}.hideMobile{display:none}table{font-size:12px}th,td{padding:7px 5px}.palpiteTable th:nth-child(2){width:auto}.jogoCell{min-width:0}.matchLine{grid-template-columns:1fr;gap:3px}.teamA,.teamB{text-align:center;font-size:12px}.scoreCenter{order:2}.teamA{order:1}.teamB{order:3}.flag{font-size:17px}.flagImg{width:24px;height:17px}.scoreBox{min-width:24px;padding:3px 5px}.resumoP .card{padding:7px}.card b{font-size:18px}.oficialLine{font-size:11px}.bkWrap{overflow-x:auto;-webkit-overflow-scrolling:touch}.bkMobile{display:none}}
 </style></head><body>
 <div class="wrap"><div class="box"><h1>Ranking Online - Bolão Copa do Mundo 2026</h1>
-<p class="small">Atualizado em 28/06/2026, 01:44:13</p>
+<p class="small">Atualizado em 28/06/2026, 10:53:49</p>
 <div class="tabs"><button id="btnAbaRanking" class="active" onclick="mostrarAba('ranking')">Ranking geral</button><button id="btnAbaPalpites" onclick="mostrarAba('palpites')">Palpites dos participantes</button><button id="btnAbaJogo" onclick="mostrarAba('jogo')">Por jogo</button><button id="btnAbaChaveamento" onclick="mostrarAba('chaveamento')">Chaveamento</button></div>
 <div id="abaRanking"><div class="tableWrap"><table class="rankingTable"><thead><tr><th>Pos.</th><th>Participante</th><th>Total</th><th>Primeira fase</th><th>Mata-mata</th><th>Final</th></tr></thead><tbody><tr style="background-color:#BCEBD3"><td><b>1º</b></td><td>Amanda</td><td><b>160</b></td><td>160</td><td>0</td><td>0</td></tr><tr style="background-color:#F40B0B"><td><b>2º</b></td><td>John</td><td><b>152</b></td><td>152</td><td>0</td><td>0</td></tr><tr style="background-color:#9160C3"><td><b>3º</b></td><td>Boscaineta</td><td><b>146</b></td><td>146</td><td>0</td><td>0</td></tr><tr style="background-color:#7D24D6"><td><b>4º</b></td><td>JáQ</td><td><b>144</b></td><td>144</td><td>0</td><td>0</td></tr><tr style="background-color:#C3A7B6"><td><b>5º</b></td><td>Tere</td><td><b>142</b></td><td>142</td><td>0</td><td>0</td></tr><tr style="background-color:#E5A4E3"><td><b>6º</b></td><td>Familia do Emerson Felipe</td><td><b>141</b></td><td>141</td><td>0</td><td>0</td></tr><tr style="background-color:#F1046B"><td><b>7º</b></td><td>Zeza</td><td><b>140</b></td><td>140</td><td>0</td><td>0</td></tr><tr style="background-color:#C5E594"><td><b>8º</b></td><td>Arlindo</td><td><b>139</b></td><td>139</td><td>0</td><td>0</td></tr><tr style="background-color:#71A3F4"><td><b>8º</b></td><td>William</td><td><b>139</b></td><td>139</td><td>0</td><td>0</td></tr><tr style="background-color:#E6B400"><td><b>10º</b></td><td>Gusto</td><td><b>138</b></td><td>138</td><td>0</td><td>0</td></tr><tr style="background-color:#516435"><td><b>11º</b></td><td>Nado</td><td><b>134</b></td><td>134</td><td>0</td><td>0</td></tr><tr style="background-color:#9DD89C"><td><b>12º</b></td><td>Maria Margarete</td><td><b>133</b></td><td>133</td><td>0</td><td>0</td></tr><tr style="background-color:#95C8F4"><td><b>13º</b></td><td>Mateus</td><td><b>131</b></td><td>131</td><td>0</td><td>0</td></tr><tr style="background-color:#FFFFFF"><td><b>14º</b></td><td>Evandro</td><td><b>130</b></td><td>130</td><td>0</td><td>0</td></tr><tr style="background-color:#155189"><td><b>14º</b></td><td>Marcinho</td><td><b>130</b></td><td>130</td><td>0</td><td>0</td></tr><tr style="background-color:#950909"><td><b>16º</b></td><td>Benedetti</td><td><b>129</b></td><td>129</td><td>0</td><td>0</td></tr><tr style="background-color:#E76118"><td><b>16º</b></td><td>Celso Filho</td><td><b>129</b></td><td>129</td><td>0</td><td>0</td></tr><tr style="background-color:#4F5EAB"><td><b>18º</b></td><td>Leandro</td><td><b>126</b></td><td>126</td><td>0</td><td>0</td></tr><tr style="background-color:#4DDBD1"><td><b>19º</b></td><td>Celso</td><td><b>125</b></td><td>125</td><td>0</td><td>0</td></tr><tr style="background-color:#57A352"><td><b>20º</b></td><td>Jose</td><td><b>123</b></td><td>123</td><td>0</td><td>0</td></tr><tr style="background-color:#329A34"><td><b>20º</b></td><td>Raquel</td><td><b>123</b></td><td>123</td><td>0</td><td>0</td></tr><tr style="background-color:#E7D0C6"><td><b>22º</b></td><td>Vó Ines</td><td><b>119</b></td><td>119</td><td>0</td><td>0</td></tr><tr style="background-color:#FFED24"><td><b>23º</b></td><td>Emerson Felipe</td><td><b>118</b></td><td>118</td><td>0</td><td>0</td></tr><tr style="background-color:#3230BB"><td><b>24º</b></td><td>Patrão Vito</td><td><b>117</b></td><td>117</td><td>0</td><td>0</td></tr></tbody></table></div></div>
 <div id="abaPalpites" class="hidden"><h2>Palpites dos participantes</h2><div class="controls"><select id="selParticipante" onchange="renderParticipante()"></select><input id="filtroJogo" placeholder="FILTRAR POR SELEÇÃO, DATA OU JOGO" oninput="renderParticipante()"></div><div id="detalheParticipante"></div></div>
@@ -87,6 +87,22 @@ function matchHtml(j){
   return '<div class="matchLine"><div class="teamA">'+esc(j.timeA)+'</div><div class="scoreCenter">'+flagHtml(j.flagA,j.timeA)+'<span class="scoreBox">'+esc(j.palA)+'</span><span class="x">x</span><span class="scoreBox">'+esc(j.palB)+'</span>'+flagHtml(j.flagB,j.timeB)+'</div><div class="teamB">'+esc(j.timeB)+'</div></div>'+jogoOficialHtml+'<div class="oficialLine"><b>Resultado oficial:</b> '+oficialTexto(j)+'</div>';
 }
 function renderParticipante(){var el=document.getElementById('detalheParticipante');var sel=document.getElementById('selParticipante');if(!dadosParticipantes.length){el.innerHTML='<p>Nenhum participante carregado.</p>';return;}if(sel.value===''){el.innerHTML='<p style="text-align:center;color:#555;padding:20px;">Selecione um participante para ver os palpites.</p>';return;}var p=dadosParticipantes[Number(sel.value)]||dadosParticipantes[0];var filtro=String(document.getElementById('filtroJogo').value||'').toLowerCase();var linhas='';p.jogos.forEach(function(j){var texto=(j.data+' '+j.horario+' '+j.key+' '+j.fase+' '+j.timeA+' '+j.timeB+' '+j.oficial+' '+j.palA+' '+j.palB).toLowerCase();if(filtro&&texto.indexOf(filtro)<0)return;linhas+='<tr class="linhaJogo"><td><b>'+esc(j.data.slice(0,5))+'</b><br><span class="small">'+esc(j.horario)+'</span><span class="gameCode">'+esc(j.key)+'</span></td><td class="jogoCell">'+matchHtml(j)+'</td><td><span class="'+pontoClasse(j)+'">'+pontosTexto(j)+'</span></td></tr>';});if(!linhas)linhas='<tr><td colspan="3">Nenhum jogo encontrado para esse filtro.</td></tr>';var codigoHtml=p.codigo?'<div style="grid-column:1/-1;background:#eef3f8;border:1px solid #b9cde0;border-radius:9px;padding:7px 10px;font-size:12px;text-align:left"><b style="color:#1F4E78">Código original:</b> <span style="font-family:monospace;font-weight:900;letter-spacing:1px;color:#12395a">'+esc(p.codigo)+'</span></div>':'';el.innerHTML='<div class="resumoP" style="background-color:'+esc(p.cor)+'">'+codigoHtml+'<div class="card"><b>'+esc(p.total)+'</b>Total</div><div class="card"><b>'+esc(p.primeira)+'</b>Primeira fase</div><div class="card"><b>'+esc(p.mata)+'</b>Mata-mata</div><div class="card champ"><b>'+esc(p.campeao)+'</b>Campeão</div></div><div class="tableWrap"><table class="palpiteTable"><thead><tr><th>Data</th><th>Jogo / palpite<br><span style="font-size:11px;font-weight:400">Resultado oficial</span></th><th>Pts</th></tr></thead><tbody>'+linhas+'</tbody></table></div>';}
+function labelCruzKO(code){
+  if(!code)return '?';
+  var mW=code.match(/^W(d+)$/);if(mW)return 'Venc.J'+mW[1];
+  var mL=code.match(/^L(d+)$/);if(mL)return 'Perd.J'+mL[1];
+  var m3=code.match(/^(d+):(.+)$/);
+  if(m3){var pos=m3[1]==='1'?'1º':m3[1]==='2'?'2º':'3º('+m3[2]+')';return m3[1]==='3'?pos:pos+' Gr.'+m3[2];}
+  return code;
+}
+var _koMap={};
+dadosKO.forEach(function(k){_koMap[k.num]=k;});
+function timesOficiaisJogoKO(num){
+  var k=_koMap[String(num)];if(!k)return null;
+  var tA=k.timeA||(k.cA?labelCruzKO(k.cA):'?');
+  var tB=k.timeB||(k.cB?labelCruzKO(k.cB):'?');
+  return {tA:tA,tB:tB};
+}
 function initJogos(){
   var ref=dadosParticipantes.reduce(function(a,b){return b.jogos.length>a.jogos.length?b:a;},dadosParticipantes[0]);
   var sel=document.getElementById('selJogo');
@@ -94,12 +110,15 @@ function initJogos(){
   ref.jogos.forEach(function(j){
     var opt=document.createElement('option');
     opt.value=j.key;
-    var ofLabel=(j.oficial&&j.oficial!=='Aguardando')?' ['+j.oficial+']':'';
-    var timesLabel;
-    if(j.faseKO&&j.oficialA&&j.oficialB){timesLabel=j.oficialA+' x '+j.oficialB;}
-    else if(j.faseKO&&(j.oficialA||j.oficialB)){timesLabel=(j.oficialA||'?')+' x '+(j.oficialB||'?');}
-    else if(j.faseKO){timesLabel=j.fase||'Mata-mata';}
-    else{timesLabel=j.timeA+' x '+j.timeB;}
+    var ofLabel=(j.oficial&&j.oficial!=='Aguardando')?' ['+j.oficial+']':'';    var timesLabel;
+    if(!j.faseKO){
+      timesLabel=j.timeA+' x '+j.timeB;
+    }else{
+      var num=j.key.replace('J','');
+      var ofKO=timesOficiaisJogoKO(num);
+      if(ofKO){timesLabel=ofKO.tA+' x '+ofKO.tB;}
+      else{timesLabel=j.fase||'Mata-mata';}
+    }
     opt.textContent=j.key+' | '+j.data.slice(0,5)+' '+j.horario+'h | '+timesLabel+ofLabel;
     sel.appendChild(opt);
   });
@@ -109,25 +128,86 @@ function renderPorJogo(){
   var el=document.getElementById('detalheJogo');
   var key=document.getElementById('selJogo').value;
   if(!key){el.innerHTML='<p style="text-align:center;color:#555;padding:20px;">Selecione um jogo para ver os palpites de todos os participantes.</p>';return;}
+  // Pega metadados do jogo (data, horário, fase, placar oficial) do primeiro participante que tem o jogo
   var jogoRef=null;
   dadosParticipantes.forEach(function(p){if(!jogoRef){var j=p.jogos.find(function(x){return x.key===key;});if(j)jogoRef=j;}});
   if(!jogoRef){el.innerHTML='<p>Jogo não encontrado.</p>';return;}
-  var flagA=jogoRef.flagA?'<img class="flagImg" src="https://flagcdn.com/w40/'+esc(jogoRef.flagA)+'.png" alt="'+esc(jogoRef.timeA)+'" loading="lazy"> ':'';
-  var flagB=jogoRef.flagB?' <img class="flagImg" src="https://flagcdn.com/w40/'+esc(jogoRef.flagB)+'.png" alt="'+esc(jogoRef.timeB)+'" loading="lazy">':'';
+  // Para mata-mata: times oficiais vêm do dadosKO, nunca dos palpites do participante
+  var dispTimeA, dispTimeB, dispFlagA, dispFlagB;
+  if(jogoRef.faseKO){
+    var _num=key.replace('J','');
+    var _ofKO=timesOficiaisJogoKO(_num);
+    if(_ofKO){dispTimeA=_ofKO.tA; dispTimeB=_ofKO.tB;}
+    else{dispTimeA=jogoRef.oficialA||labelCruzKO((_koMap[_num]||{}).cA||'')||'Seleção A'; dispTimeB=jogoRef.oficialB||labelCruzKO((_koMap[_num]||{}).cB||'')||'Seleção B';}
+    // Bandeiras só se houver time real definido
+    var _flagMap={"México":"mx","África do Sul":"za","Coreia do Sul":"kr","Rep. Tcheca":"cz","Canadá":"ca","Bósnia":"ba","Catar":"qa","Suíça":"ch","Brasil":"br","Marrocos":"ma","Haiti":"ht","Escócia":"gb-sct","EUA":"us","Paraguai":"py","Austrália":"au","Turquia":"tr","Alemanha":"de","Curaçao":"cw","Costa do Marfim":"ci","Equador":"ec","Holanda":"nl","Japão":"jp","Suécia":"se","Tunísia":"tn","Bélgica":"be","Egito":"eg","Irã":"ir","N. Zelândia":"nz","Espanha":"es","Cabo Verde":"cv","A. Saudita":"sa","Uruguai":"uy","França":"fr","Senegal":"sn","Iraque":"iq","Noruega":"no","Argentina":"ar","Argélia":"dz","Áustria":"at","Jordânia":"jo","Portugal":"pt","Congo":"cd","Uzbequistão":"uz","Colômbia":"co","Inglaterra":"gb-eng","Croácia":"hr","Gana":"gh","Panamá":"pa"};
+    dispFlagA=_flagMap[dispTimeA]||''; dispFlagB=_flagMap[dispTimeB]||'';
+  }else{
+    dispTimeA=jogoRef.timeA; dispTimeB=jogoRef.timeB;
+    dispFlagA=jogoRef.flagA; dispFlagB=jogoRef.flagB;
+  }
+  var flagA=dispFlagA?'<img class="flagImg" src="https://flagcdn.com/w40/'+esc(dispFlagA)+'.png" alt="'+esc(dispTimeA)+'" loading="lazy"> ':'';
+  var flagB=dispFlagB?' <img class="flagImg" src="https://flagcdn.com/w40/'+esc(dispFlagB)+'.png" alt="'+esc(dispTimeB)+'" loading="lazy">':'';
   var oficialLabel=(jogoRef.oficial&&jogoRef.oficial!=='Aguardando')
     ?'<div class="jogoOficial">Resultado oficial: '+esc(jogoRef.oficial)+'</div>'
     :'<div style="color:#888;font-size:13px;margin-top:6px;">Resultado ainda não apurado</div>';
-  var infoHtml='<div class="jogoInfoBox"><div class="jogoTimes">'+flagA+esc(jogoRef.timeA)+'&nbsp;×&nbsp;'+esc(jogoRef.timeB)+flagB+'</div><div class="jogoMeta">'+esc(jogoRef.data)+'&nbsp;·&nbsp;'+esc(jogoRef.horario)+'h&nbsp;·&nbsp;'+esc(jogoRef.fase)+'&nbsp;·&nbsp;'+esc(jogoRef.key)+'</div>'+oficialLabel+'</div>';
+  var infoHtml='<div class="jogoInfoBox"><div class="jogoTimes">'+flagA+esc(dispTimeA)+'&nbsp;×&nbsp;'+esc(dispTimeB)+flagB+'</div><div class="jogoMeta">'+esc(jogoRef.data)+'&nbsp;·&nbsp;'+esc(jogoRef.horario)+'h&nbsp;·&nbsp;'+esc(jogoRef.fase)+'&nbsp;·&nbsp;'+esc(jogoRef.key)+'</div>'+oficialLabel+'</div>';
   var palpites=[];
-  dadosParticipantes.forEach(function(p){var j=p.jogos.find(function(x){return x.key===key;});if(j)palpites.push({nome:p.nome,cor:p.cor,palA:j.palA,palB:j.palB,pontos:j.pontos,faseKO:j.faseKO});});
+  dadosParticipantes.forEach(function(p){
+    var j=p.jogos.find(function(x){return x.key===key;});
+    if(!j) return;
+    // Para mata-mata: pega os times previstos pelo participante
+    var tA='', tB='';
+    if(j.faseKO){
+      // timeA/B no objeto do participante são os times que ELE previu classificar
+      tA=j.timeA||'?'; tB=j.timeB||'?';
+    }
+    palpites.push({nome:p.nome,cor:p.cor,palA:j.palA,palB:j.palB,pontos:j.pontos,faseKO:j.faseKO,timeA:tA,timeB:tB});
+  });
   palpites.sort(function(a,b){var pa=(a.pontos===''||a.pontos===null||a.pontos===undefined)?-1:Number(a.pontos);var pb=(b.pontos===''||b.pontos===null||b.pontos===undefined)?-1:Number(b.pontos);if(pb!==pa)return pb-pa;return a.nome.localeCompare(b.nome,'pt-BR');});
   var grupos={};
-  palpites.forEach(function(p){var k=p.palA+'x'+p.palB;if(!grupos[k])grupos[k]={palA:p.palA,palB:p.palB,pontos:p.pontos,faseKO:p.faseKO,participantes:[]};grupos[k].participantes.push({nome:p.nome,cor:p.cor,pontos:p.pontos,faseKO:p.faseKO});});
-  var palKeys=Object.keys(grupos).sort(function(a,b){var pa=Number(grupos[a].pontos)||0,pb=Number(grupos[b].pontos)||0;return pb-pa;});
+  palpites.forEach(function(p){
+    // Mata-mata: chave inclui times previstos + placar (combinação completa define a pontuação)
+    var k=p.faseKO?(p.timeA+'|'+p.palA+'x'+p.palB+'|'+p.timeB):(p.palA+'x'+p.palB);
+    if(!grupos[k])grupos[k]={palA:p.palA,palB:p.palB,faseKO:p.faseKO,timeA:p.timeA,timeB:p.timeB,participantes:[]};
+    grupos[k].participantes.push({nome:p.nome,cor:p.cor,pontos:p.pontos,faseKO:p.faseKO});
+  });
+  // Ordena grupos por pontuação decrescente (todos do mesmo grupo têm a mesma pontuação agora)
+  var palKeys=Object.keys(grupos).sort(function(a,b){
+    var pa=(grupos[a].participantes[0].pontos===''||grupos[a].participantes[0].pontos===null||grupos[a].participantes[0].pontos===undefined)?-1:Number(grupos[a].participantes[0].pontos);
+    var pb=(grupos[b].participantes[0].pontos===''||grupos[b].participantes[0].pontos===null||grupos[b].participantes[0].pontos===undefined)?-1:Number(grupos[b].participantes[0].pontos);
+    return pb-pa;
+  });
   var resumoLinhas='';
-  palKeys.forEach(function(k){var g=grupos[k];var ptsLabel=(g.pontos===''||g.pontos===null||g.pontos===undefined)?'–':((Number(g.pontos)>0?'+':'')+g.pontos);var nomes=g.participantes.map(function(p){return '<span class="corDot" style="background:'+esc(p.cor)+'"></span>'+esc(p.nome);}).join('&nbsp;&nbsp;');resumoLinhas+='<tr><td><b>'+esc(g.palA)+' × '+esc(g.palB)+'</b></td><td><span class="'+pjPtsClasse(g.participantes[0])+'">'+esc(String(ptsLabel))+'</span></td><td style="text-align:left">'+nomes+'</td></tr>';});
+  palKeys.forEach(function(k){
+    var g=grupos[k];
+    var ref=g.participantes[0];
+    var pts=(ref.pontos===''||ref.pontos===null||ref.pontos===undefined)?null:Number(ref.pontos);
+    var ptsLabel=pts===null?'–':((pts>0?'+':'')+pts);
+    var ptsCls=pjPtsClasse(ref);
+    // Label do palpite: para mata-mata mostra times + placar; para grupo só placar
+    var palLabel;
+    if(g.faseKO){
+      palLabel=esc(g.timeA||'?')+' <b>'+esc(g.palA)+'×'+esc(g.palB)+'</b> '+esc(g.timeB||'?');
+    }else{
+      palLabel='<b>'+esc(g.palA)+' × '+esc(g.palB)+'</b>';
+    }
+    var nomes=g.participantes.map(function(p){
+      return '<span class="corDot" style="background:'+esc(p.cor)+'"></span>'+esc(p.nome);
+    }).join('&nbsp;&nbsp;');
+    resumoLinhas+='<tr><td>'+palLabel+'</td><td><span class="'+ptsCls+'">'+esc(String(ptsLabel))+'</span></td><td style="text-align:left">'+nomes+'</td></tr>';
+  });
   var linhas='';
-  palpites.forEach(function(p){var ptsLabel=(p.pontos===''||p.pontos===null||p.pontos===undefined)?'–':((Number(p.pontos)>0?'+':'')+p.pontos);linhas+='<tr><td><span class="corDot" style="background:'+esc(p.cor)+'"></span>'+esc(p.nome)+'</td><td>'+esc(p.palA)+' × '+esc(p.palB)+'</td><td><span class="'+pjPtsClasse(p)+'">'+esc(String(ptsLabel))+'</span></td></tr>';});
+  palpites.forEach(function(p){
+    var ptsLabel=(p.pontos===''||p.pontos===null||p.pontos===undefined)?'–':((Number(p.pontos)>0?'+':'')+p.pontos);
+    var palCell;
+    if(p.faseKO){
+      palCell=esc(p.timeA||'?')+' <b>'+esc(p.palA)+'×'+esc(p.palB)+'</b> '+esc(p.timeB||'?');
+    }else{
+      palCell=esc(p.palA)+' × '+esc(p.palB);
+    }
+    linhas+='<tr><td><span class="corDot" style="background:'+esc(p.cor)+'"></span>'+esc(p.nome)+'</td><td>'+palCell+'</td><td><span class="'+pjPtsClasse(p)+'">'+esc(String(ptsLabel))+'</span></td></tr>';
+  });
   el.innerHTML=infoHtml
     +'<h3 style="color:#143a5a;margin:14px 0 6px">Resumo por palpite</h3>'
     +'<div class="tableWrap"><table class="porJogoTable"><thead><tr><th>Palpite</th><th>Pts</th><th>Participantes</th></tr></thead><tbody>'+resumoLinhas+'</tbody></table></div>'
@@ -179,243 +259,411 @@ function renderBracket(){
   var FW=18, FH=12, FPAD=2;
 
   /* ══════════════════════════════════════════
-     VIEW MOBILE — lista vertical por fase
+     VIEW MOBILE — alinhado com layout desktop
+     Ordem: Final → 3°Lugar → Semis → Lado Esq (→J101) → Lado Dir (→J102)
+     Cada lado: Quartas → Oitavas → Q1/R32 e Q2/R32
   ══════════════════════════════════════════ */
-  var fasesMobile=[
-    {label:'RODADA DE 32',cls:'h-r32', nums:['73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88']},
-    {label:'OITAVAS DE FINAL',cls:'h-oit', nums:['89','90','91','92','93','94','95','96']},
-    {label:'QUARTAS DE FINAL',cls:'h-qua', nums:['97','98','99','100']},
-    {label:'SEMIFINAL',cls:'h-sem', nums:['101','102']},
-    {label:'DECISÃO DO 3° LUGAR',cls:'h-ter', nums:['103']},
-    {label:'FINAL',cls:'h-fin', nums:['104']}
-  ];
-
   function jogoMobileHtml(k){
     var concluido=(k.placarA!==''&&k.placarB!=='');
     var tA=k.timeA||(labelCruz(k.cA)||'?'), tB=k.timeB||(labelCruz(k.cB)||'?');
     var venc=k.vencedor||'';
     function tcls(t,orig){ if(!orig) return 'ttbd'; if(concluido) return t===venc?'tw':'tl'; return ''; }
-    function placar(p,t){ return concluido&&p!==''?'<span class="tplacar">'+esc2(p)+'</span>':''; }
+    function placar(p){ return concluido&&p!==''?'<span class="tplacar">'+esc2(p)+'</span>':''; }
     function flagImgM(nome){ var fc=flagCode(nome); return fc?'<img src="https://flagcdn.com/w40/'+fc+'.png" alt="'+esc2(nome)+'" style="width:18px;height:12px;object-fit:cover;border-radius:2px;vertical-align:middle;margin-right:5px;box-shadow:0 0 0 1px #0001">':''; }
-    return '<div class="bkJogo">'
-      +'<div class="bkJogoNum">J'+esc2(k.num)+'</div>'
-      +'<div class="bkJogoBody">'
-      +'<div class="bkJogoTime '+tcls(tA,k.timeA)+'">'+flagImgM(k.timeA)+'<span class="tnome">'+esc2(tA)+'</span>'+placar(k.placarA,tA)+'</div>'
-      +'<div class="bkJogoTime '+tcls(tB,k.timeB)+'">'+flagImgM(k.timeB)+'<span class="tnome">'+esc2(tB)+'</span>'+placar(k.placarB,tB)+'</div>'
-      +'</div></div>';
+    // Card: J104 | [flag] Brasil 2 × 1 [flag] Argentina
+    var corA=tA&&concluido?(tA===venc?'#056b05':'#999'):'#1a3a5c';
+    var corB=tB&&concluido?(tB===venc?'#056b05':'#999'):'#1a3a5c';
+    var scoreHtml=concluido
+      ?'<span style="font-weight:900;color:#1F4E78;background:#eef3f8;border-radius:6px;padding:2px 7px;font-size:13px;margin:0 4px;white-space:nowrap">'+esc2(k.placarA)+' × '+esc2(k.placarB)+'</span>'
+      :'<span style="color:#bbb;font-size:11px;margin:0 6px">×</span>';
+    return '<div style="display:flex;align-items:center;border-bottom:1px solid #edf0f4;background:#fff;padding:7px 8px;gap:4px;min-height:44px">'
+      +'<span style="background:#1F4E78;color:#fff;font-size:9px;font-weight:900;border-radius:4px;padding:2px 4px;white-space:nowrap;flex-shrink:0">J'+esc2(k.num)+'</span>'
+      +'<div style="flex:1;display:flex;align-items:center;min-width:0;gap:2px;overflow:hidden">'
+      +'<span style="display:flex;align-items:center;gap:3px;flex:1;min-width:0;overflow:hidden">'+flagImgM(k.timeA)+'<span style="font-size:11px;font-weight:700;color:'+corA+';overflow:hidden;text-overflow:ellipsis;white-space:nowrap">'+esc2(tA)+'</span></span>'
+      +scoreHtml
+      +'<span style="display:flex;align-items:center;gap:3px;flex:1;min-width:0;overflow:hidden;justify-content:flex-end">'+flagImgM(k.timeB)+'<span style="font-size:11px;font-weight:700;color:'+corB+';overflow:hidden;text-overflow:ellipsis;white-space:nowrap">'+esc2(tB)+'</span></span>'
+      +'</div>'
+      +'</div>';
+  }
+
+  function subhdr(lbl, cor){
+    return '<div style="padding:4px 10px;font-size:10px;font-weight:900;color:'+cor+';background:#f4f6f9;border-bottom:1px solid #e0e5ea;letter-spacing:.5px">'+lbl+'</div>';
   }
 
   var mobileHtml='<div class="bkMobile">';
-  fasesMobile.forEach(function(f){
-    mobileHtml+='<div class="bkFase"><div class="bkFaseHdr '+f.cls+'">'+f.label+'</div>';
-    f.nums.forEach(function(n){ mobileHtml+=jogoMobileHtml(g(n)); });
-    mobileHtml+='</div>';
-  });
+
+  // ── FINAL ──
+  mobileHtml+='<div class="bkFase"><div class="bkFaseHdr h-fin">FINAL</div>'+jogoMobileHtml(g('104'))+'</div>';
+  mobileHtml+='<div class="bkFase"><div class="bkFaseHdr h-ter">3° LUGAR</div>'+jogoMobileHtml(g('103'))+'</div>';
+
+  // ── SEMIFINAL ──
+  mobileHtml+='<div class="bkFase"><div class="bkFaseHdr h-sem">SEMIFINAL</div>';
+  mobileHtml+=subhdr('Semi 1 → Final (J101)','#444');
+  mobileHtml+=jogoMobileHtml(g('101'));
+  mobileHtml+=subhdr('Semi 2 → Final (J102)','#444');
+  mobileHtml+=jogoMobileHtml(g('102'));
+  mobileHtml+='</div>';
+
+  // ── LADO ESQUERDO → J101 (Q1 + Q2) ──
+  mobileHtml+='<div class="bkFase"><div class="bkFaseHdr" style="background:#1F4E78">LADO ESQUERDO → J101</div>';
+
+  mobileHtml+=subhdr('QUARTAS DE FINAL','#1F4E78');
+  mobileHtml+=jogoMobileHtml(g('97'));
+  mobileHtml+=jogoMobileHtml(g('98'));
+
+  mobileHtml+=subhdr('OITAVAS DE FINAL','#1F4E78');
+  mobileHtml+=jogoMobileHtml(g('89'));
+  mobileHtml+=jogoMobileHtml(g('90'));
+  mobileHtml+=jogoMobileHtml(g('94'));
+  mobileHtml+=jogoMobileHtml(g('93'));
+
+  mobileHtml+=subhdr('RODADA DE 32 — Q1','#1a4971');
+  ['74','77','73','75'].forEach(function(n){ mobileHtml+=jogoMobileHtml(g(n)); });
+
+  mobileHtml+=subhdr('RODADA DE 32 — Q2','#1e6b8a');
+  ['81','82','83','84'].forEach(function(n){ mobileHtml+=jogoMobileHtml(g(n)); });
+
+  mobileHtml+='</div>';
+
+  // ── LADO DIREITO → J102 (Q3 + Q4) ──
+  mobileHtml+='<div class="bkFase"><div class="bkFaseHdr" style="background:#1a5e3a">LADO DIREITO → J102</div>';
+
+  mobileHtml+=subhdr('QUARTAS DE FINAL','#1F4E78');
+  mobileHtml+=jogoMobileHtml(g('99'));
+  mobileHtml+=jogoMobileHtml(g('100'));
+
+  mobileHtml+=subhdr('OITAVAS DE FINAL','#1F4E78');
+  mobileHtml+=jogoMobileHtml(g('91'));
+  mobileHtml+=jogoMobileHtml(g('92'));
+  mobileHtml+=jogoMobileHtml(g('95'));
+  mobileHtml+=jogoMobileHtml(g('96'));
+
+  mobileHtml+=subhdr('RODADA DE 32 — Q3','#1a7a5e');
+  ['76','78','79','80'].forEach(function(n){ mobileHtml+=jogoMobileHtml(g(n)); });
+
+  mobileHtml+=subhdr('RODADA DE 32 — Q4','#7a4b1a');
+  ['86','88','85','87'].forEach(function(n){ mobileHtml+=jogoMobileHtml(g(n)); });
+
+  mobileHtml+='</div>';
+
   mobileHtml+='</div>';
 
   /* ══════════════════════════════════════════
-     VIEW DESKTOP — SVG bracket olímpico
-     Posições Y fixas calculadas a partir de
-     slots uniformes de CH+GAP pixels cada.
-     16 slots no total (8 por metade).
-     Cada fase ocupa o centro do seu grupo.
+     VIEW DESKTOP — SVG espelhado simétrico
+     13 colunas: [R32a R32b Oit Oit Qta Semi] [FINAL] [Semi Qta Oit Oit R32b R32a]
+
+     Slot mapping (0-7, 8 linhas):
+     Esquerda:
+       Q1 (slots 0-3): J74(s0),J77(s1),J73(s2),J75(s3) col0
+                        J81(s0),J82(s1),J83(s2),J84(s3) col1
+                        J89(s0-1), J90(s2-3)  Oitavas col2
+                        J94(s0-1), J93(s2-3)  Oitavas col3
+                        J97(s0-1ctr), J98(s2-3ctr) Quartas col4
+                        J101(s0-3ctr)  Semi col5
+       Q2 (slots 4-7): idem mas slots 4-7 → sem jogos no lado esq slots 4-7!
+
+     PROBLEMA RAIZ: Q1+Q2 ambas alimentam J101 e ambas têm oitavas nos slots 0-3.
+     SOLUÇÃO: usar slots separados para Q1 e Q2:
+       Q1 slots 0-3, Q2 slots 4-7 (lado esq)
+       Q3 slots 0-3, Q4 slots 4-7 (lado dir)
+       J101 = W97(s0-1ctr)+W98(s4-7ctr) → centro s0-7 = cyR(0,7) ... mas J101=W97+W98
+       J97=W89+W90 (oitavas Q1 → slots 0-3) e J98=W94+W93 (oitavas Q2 → mas Q2 em slots 4-7!)
+       
+     REDISTRIBUIÇÃO FINAL:
+       Q1: cols 0,1 slots 0-3 → Oit col2(s0-3) → Qta col4(s0-3ctr) J97 → Semi col5(s0-3ctr) J101
+       Q2: cols 0,1 slots 4-7 → Oit col2(s4-7) → Qta col4(s4-7ctr) J98*
+         *J98=W94+W93 mas J94,J93 são oitavas de col1 slots 0-3... CONFLITO.
+       
+     SOLUÇÃO DEFINITIVA: Separar Q1 e Q2 em DUAS colunas separadas de R32 (cols 0 e 1),
+     mas distribuir os slots verticalmente:
+       col0: Q1 exclusivamente slots 0-3 (J74,J77,J73,J75)
+       col1: Q2 exclusivamente slots 4-7 (J81,J82,J83,J84)→ mas oitavas de Q2 seriam J94,J93 em slots 4-7
+       Ainda assim J97=W89+W90 (slots 0-3) e J98=W94+W93 (slots 4-7) → J101 center = cyR(0,7) ✓
+       J101 center = cyR(cyR(0,3), cyR(4,7)) = cyR(0,7) — funciona!
+       
+     LAYOUT SIMÉTRICO FINAL:
+       Esq col0 (Q1 topo, slots 0-3): J74(s0),J77(s1),J73(s2),J75(s3)
+       Esq col1 (Q2 baixo, slots 4-7): J81(s4),J82(s5),J83(s6),J84(s7)
+       Esq Oit col2: J89(s0-1), J90(s2-3), J94(s4-5), J93(s6-7)
+       Esq Qta col4: J97(cyR0-3), J98(cyR4-7)
+       Esq Semi col5: J101(cyR0-7)
+       Final col6: J104(cyR0-7)
+       Dir Semi col7: J102(cyR0-7)
+       Dir Qta col8: J99(cyR0-3), J100(cyR4-7)
+       Dir Oit col9: J91(s0-1), J92(s2-3), J95(s4-5), J96(s6-7)
+       Dir col10 (Q4 topo, slots 0-3): J76(s0),J78(s1),J79(s2),J80(s3)
+       Dir col11 (Q3 baixo, slots 4-7): J86(s4),J88(s5),J85(s6),J87(s7)
+       
+     Mas aguarda: J91=W76+W78 e J92=W79+W80 (de col10 Q4 slots 0-3), então J91,J92 ficam em slots 0-3? 
+     Mas J91,J92 alimentam J99 que por este layout fica em s0-3... e J99+J100→J102(s0-7).
+     J95=W86+W88 e J96=W85+W87 (de col11 Q3 slots 4-7) → J95,J96 em slots 4-7 → J100(s4-7) ✓
+     J99(s0-3) + J100(s4-7) → J102(s0-7) ✓
+
+     Porém há problema: Q4(slots 0-3) alimenta J91(s0-1),J92(s2-3) que ficam em slots 0-3.
+     E Q3(slots 4-7) alimenta J95(s4-5),J96(s6-7) em slots 4-7. ✓ SIMÉTRICO COM O LADO ESQ!
+     
+     Esq: Q1(s0-3)→J89,J90(s0-3)→J97(s0-3)→J101(s0-7)
+          Q2(s4-7)→J94,J93(s4-7)→J98(s4-7)→J101(s0-7)
+     Dir: Q4(s0-3)→J91,J92(s0-3)→J99(s0-3)→J102(s0-7)  
+          Q3(s4-7)→J95,J96(s4-7)→J100(s4-7)→J102(s0-7)
+     Final: J104(s0-7)
+     
+     PERFEITO! Completamente simétrico. 11 colunas suficientes (sem R32b separado — 
+     cada col de R32 já tem Q1 OU Q2, não os dois juntos).
+     Mas tínhamos 2 sub-grupos de R32 por quadrante (ex: Q1: J74,J77,J73,J75 + J81,J82,J83,J84).
+     Esses 8 jogos precisam de 2 colunas. Então:
+       col0(R32a Q1 s0-3): J74(s0),J77(s1),J73(s2),J75(s3) → Oit J89,J90
+       col1(R32b Q1 s0-3): J81(s0),J82(s1),J83(s2),J84(s3) → Oit J94,J93 ... slots 0-3 colide com col0!
+     Solução: usar 2 colunas de oitavas por lado (como antes, cols 2 e 3 no esq):
+       col2(OitA Q1): J89(s0-1 ← col0), J90(s2-3 ← col0)
+       col3(OitB Q1+Q2): J94(s0-1 ← col1), J93(s2-3 ← col1), J95(s4-5 ← col?), J96(s6-7 ← col?)
+     Não funciona — OitB mistura Q1(J94,J93 slots 0-3) com Q3(J95,J96 slots 4-7 dir).
+
+     *** LAYOUT EXECUTÁVEL COM 11 COLUNAS ***
+     col0: R32a-L: J74(s0),J77(s1),J73(s2),J75(s3) [Q1 topo]
+     col1: R32b-L: J81(s4),J82(s5),J83(s6),J84(s7) [Q2 baixo]  ← slots 4-7!
+     col2: Oit-L-A: J89(s0-1)[←col0], J90(s2-3)[←col0], J94(s4-5)[←col1], J93(s6-7)[←col1]
+     col3: Oit-L-B: (vazio — já cobrimos com col2 acima; mas col0 tem 4 jogos e col1 tem 4 jogos,
+           cada dupla de R32 → 1 oitava. Precisamos de 2 colunas de R32 por "grupo" e 1 de oitavas)
+     
+     Simplificando com 2 R32 por lado mas em cols separadas e oitavas em 1 col:
+     col0 slots 0-3: J74,J77,J73,J75 [Q1]  → J89(s0-1),J90(s2-3) em col2
+     col1 slots 0-3: J81,J82,J83,J84 [Q2 → conecta para Oit col3 em s0-3]
+         mas Q2 deveria ficar em slots 4-7...
+     
+     DECISÃO: usar 2 colunas de R32 intercaladas (Q1 e Q2 na mesma coluna, alternados) como era antes,
+     e simplesmente mover Q2 para slots 4-7:
+     col0: J74(s0),J77(s1),J73(s2),J75(s3) [Q1 s0-3] + J81(s4),J82(s5),J83(s6),J84(s7) [Q2 s4-7]
+     col1: (segunda sub-coluna não existe — Q1 e Q2 têm apenas 4 R32 cada aqui? NÃO: Q1 tem 8)
+     
+     VERDADE: Q1 tem 8 R32: J74,J77,J73,J75 → J89,J90 E J81,J82,J83,J84 → J94,J93
+     Esses 8 jogos precisam de DUAS colunas de R32. Sem volta. 11 colunas totais.
+     Layout com col separada para cada sub-grupo dentro do mesmo quadrante:
+     col0(Q1a s0-3):J74,J77,J73,J75 → col2 J89,J90(s0-3)
+     col1(Q1b s0-3):J81,J82,J83,J84 → col3 J94,J93(s0-3) ← col0 e col1 compartilham slots 0-3 ✓
+     col4(Qta-L): J97(s0-3ctr) ← J89+J90 e J94+J93
+     
+     Mas Q2 fica onde? Q2: J86,J88,J85,J87 → J95,J96 → J100
+     Se Q2 fica slots 4-7: col0(Q2a s4-7):J86(s4),J88(s5),J85(s6),J87(s7) → J95,J96 col2(s4-7)
+                            col1(Q2b s4-7):... mas não existe segundo sub-grupo para Q2 no lado esq!
+     Q2(esq baixo) seria: J76,J78,J79,J80 → J91,J92 → J99... mas esses são do lado DIR (Q4)!
+     
+     RESUMO DO CHAVEAMENTO REAL:
+       Esq lado (→J101): Q1{J74,J77,J73,J75,J81,J82,J83,J84}→{J89,J90,J94,J93}→{J97,J98}→J101
+       Dir lado (→J102): Q2{J76,J78,J79,J80,J86,J88,J85,J87}→{J91,J92,J95,J96}→{J99,J100}→J102
+       Final: J101+J102→J104
+     
+     Para layout espelhado simétrico com esses 2 grupos:
+     Esq (cols 0-4): R32a(col0,s0-3)+R32b(col1,s0-3) → Oit-A(col2,s0-3)+Oit-B(col3,s0-3) → Qta(col4) → Semi(col5)
+     Dir (cols 8-12): R32a(col12,s0-3)+R32b(col11,s0-3) → Oit-A(col10,s0-3)+Oit-B(col9,s0-3) → Qta(col8) → Semi(col7)
+     Centro (col6): J104 + J103
+     
+     PROBLEMA: Esq e Dir ambos usam apenas slots 0-3 (metade superior). Metade inferior vazia!
+     Para usar todos os slots e ficar visualmente equilibrado, distribuir verticalmente:
+     Esq: slots 0-7 (Q1 em 0-3, Q2 seria em 4-7 mas Q2 real é o lado Dir)
+     Então esq usa s0-7 com Q1 em todos e Dir usa s0-7 com Q2 em todos.
+     Cada lado terá 8 R32, 4 oitavas, 2 quartas, 1 semi em slots 0-7. ✓ SIMÉTRICO!
+     
+     Distribuição esq (s0-7):
+       col0 R32a: J74(s0),J77(s1),J73(s2),J75(s3),J81(s4),J82(s5),J83(s6),J84(s7) ← 8 jogos em 8 slots ✓
+       col1 R32b: vazio — col0 já tem todos os 8 R32. Não há R32b separado!
+       ESPERA: cada oitava é W74+W77, W73+W75 etc. — são PARES de R32.
+       Os 8 R32 do esq se agrupam em 4 pares → 4 oitavas:
+         J74+J77 → J89; J73+J75 → J90; J81+J82 → J94; J83+J84 → J93
+       Para isso J74 e J77 precisam estar em slots adjacentes (ex: s0 e s1) → J89 center = cyR(0,1)
+       J73,J75 em s2,s3 → J90 center = cyR(2,3)
+       J81,J82 em s4,s5 → J94 center = cyR(4,5)
+       J83,J84 em s6,s7 → J93 center = cyR(6,7)
+       Oitavas: J89(s0-1),J90(s2-3),J94(s4-5),J93(s6-7) — 4 oitavas em 1 coluna ✓ (col1 esq)
+       Quartas: J97=W89+W90 center=cyR(0,3); J98=W94+W93 center=cyR(4,7) — (col2 esq)
+       Semi: J101=W97+W98 center=cyR(0,7) — (col3 esq)
+       
+     Dir (espelho, s0-7):
+       col12 R32a: J76(s0),J78(s1),J79(s2),J80(s3),J86(s4),J88(s5),J85(s6),J87(s7)
+       col11 Oitavas: J91(s0-1)=W76+W78, J92(s2-3)=W79+W80, J95(s4-5)=W86+W88, J96(s6-7)=W85+W87
+       col10 Quartas: J99=W91+W92 center=cyR(0,3); J100=W95+W96 center=cyR(4,7)
+       col9 Semi: J102=W99+W100 center=cyR(0,7)
+       Final: J104 col8(centro) center=cyR(0,7) ✓
+     
+     LAYOUT DEFINITIVO 9 COLUNAS (2R32+1Oit+1Qta+1Semi por lado + 1 Final):
+     col0=R32-L | col1=Oit-L | col2=Qta-L | col3=Semi-L | [col4=FINAL] | col5=Semi-R | col6=Qta-R | col7=Oit-R | col8=R32-R
+     Largura: 9*CW + 8*CGAP com CW=130px CGAP=12px = 1170+96 = 1266px → min-width:1000px com viewBox
   ══════════════════════════════════════════ */
-  var CW=128, CH=48, GAP=8, CGAP=16, HDR=22, PX=7, PY=4, TOP=HDR+6;
-  var SLOT=CH+GAP; // 56px por slot
+  var CW=126, CH=46, GAP=6, CGAP=10, HDR=20, PX=5, TOP=HDR+4;
+  var SLOT=CH+GAP;
+  var FW=16, FH=10, FPAD=2;
 
-  // cy(slot): centro do card no slot i (0-based, 0..15)
   function cy(slot){ return TOP + slot*SLOT + CH/2; }
-  // cyRange(a,b): centro entre os slots a..b
   function cyR(a,b){ return (cy(a)+cy(b))/2; }
+  function slotCY(s){ return Array.isArray(s)?cyR(s[0],s[1]):cy(s); }
 
-  /* Mapeamento de jogos → slots (0-15, 16 slots = 8 pares da R32)
-     Metade superior (slots 0-7):  J74,J77 → J89 → J97 → J101 → J104
-                                   J73,J75 → J90 ↗
-                                   J81,J82 → J94 → J98 ↗
-                                   J83,J84 → J93 ↗
-     Metade inferior (slots 8-15): J76,J78 → J91 → J99 → J102 → J104
-                                   J79,J80 → J92 ↗
-                                   J86,J88 → J95 → J100↗
-                                   J85,J87 → J96 ↗
-     J103 (3º): centrado no meio do SVG entre as semis
-  */
-
-  // Col 0: R32-A (slots individuais)
-  var c0=[
-    {n:'74',s:0},{n:'77',s:1},  // → J89 (slots 0-1)
-    {n:'73',s:2},{n:'75',s:3},  // → J90 (slots 2-3)
-    {n:'76',s:4},{n:'78',s:5},  // → J91 (slots 4-5) -- estava errado antes, corrigido
-    {n:'79',s:6},{n:'80',s:7}   // → J92 (slots 6-7)
-  ];
-  // Col 1: R32-B
-  var c1=[
-    {n:'81',s:0},{n:'82',s:1},  // → J94 (slots 0-1)
-    {n:'83',s:2},{n:'84',s:3},  // → J93 (slots 2-3)
-    {n:'86',s:4},{n:'88',s:5},  // → J95 (slots 4-5)
-    {n:'85',s:6},{n:'87',s:7}   // → J96 (slots 6-7)
-  ];
-  // Col 2: Oitavas A
-  var c2=[
-    {n:'89',s:[0,1]},  // → J97
-    {n:'90',s:[2,3]},  // → J97
-    {n:'91',s:[4,5]},  // → J99
-    {n:'92',s:[6,7]}   // → J99
-  ];
-  // Col 3: Oitavas B
-  var c3=[
-    {n:'94',s:[0,1]},  // → J98
-    {n:'93',s:[2,3]},  // → J98
-    {n:'95',s:[4,5]},  // → J100
-    {n:'96',s:[6,7]}   // → J100
-  ];
-  // Col 4: Quartas — J97,J98 → J101; J99,J100 → J102
-  var c4=[
-    {n:'97', s:[0,1]},   // W89+W90 → J101
-    {n:'98', s:[2,3]},   // W94+W93 → J101 -- CORRIGIDO: J97 e J98 ambos para J101
-    {n:'99', s:[4,5]},   // W91+W92 → J102
-    {n:'100',s:[6,7]}    // W95+W96 → J102
-  ];
-  // Col 5: Semis
-  var c5=[
-    {n:'101',s:[0,3]},   // W97+W98 → J104
-    {n:'102',s:[4,7]}    // W99+W100 → J104
-  ];
-  // Col 6: Final e 3º
-  var c6=[
-    {n:'104',s:[0,7], special:1},  // Final: W101+W102
-    {n:'103',s:[0,7], special:2}   // 3º lugar: L101+L102 — posicionado separado
-  ];
-
-  function slotCY(s){
-    if(Array.isArray(s)) return cyR(s[0],s[1]);
-    return cy(s);
-  }
-
-  // X de início de cada coluna (7 colunas)
-  var NC=7;
+  // 9 colunas: 0=R32-L, 1=Oit-L, 2=Qta-L, 3=Semi-L, 4=Final, 5=Semi-R, 6=Qta-R, 7=Oit-R, 8=R32-R
+  var NC=9;
   var colX=[];
   var xx=0;
-  for(var c=0;c<NC;c++){ colX.push(xx); xx+=CW+(c<NC-1?CGAP:0); }
+  for(var ci=0;ci<NC;ci++){
+    colX.push(xx);
+    var cg=(ci===3||ci===4||ci===5)?CGAP+14:CGAP; // gap extra ao redor do Final
+    xx+=CW+(ci<NC-1?cg:0);
+  }
   var svgW=xx;
-  var svgH=TOP+8*SLOT+20+16; // 8 slots + legenda
+  var cy3=TOP+8*SLOT+7; // 3º lugar abaixo
 
-  // cy do 3º lugar: abaixo do conteúdo principal, centralizado entre as semis
-  var cy3=TOP+8*SLOT+8; // abaixo do bracket
-
-  /* ── Funções SVG ── */
-  function hdr(cx,lbl){
-    return '<rect class="bkHdr" x="'+cx+'" y="0" width="'+CW+'" height="'+HDR+'" rx="5"/>'
-      +'<text class="bkHdrTxt" x="'+(cx+CW/2)+'" y="'+(HDR/2+1)+'" text-anchor="middle" dominant-baseline="middle">'+esc2(lbl)+'</text>';
+  function hdrSvg(cx,lbl,cor){
+    return '<rect fill="'+(cor||'#1F4E78')+'" x="'+cx+'" y="0" width="'+CW+'" height="'+HDR+'" rx="4"/>'
+      +'<text class="bkHdrTxt" x="'+(cx+CW/2)+'" y="'+(HDR/2+1)+'" text-anchor="middle" dominant-baseline="middle" font-size="9">'+esc2(lbl)+'</text>';
   }
 
-  function card(k,cx,cyCtr,spec){
+  function cardSvg(k,cx,cyCtr,spec){
     var x0=cx, y0=cyCtr-CH/2;
     var conc=(k.placarA!==''&&k.placarB!=='');
     var tA=k.timeA||'', tB=k.timeB||'';
     var venc=k.vencedor||'';
     var pA=k.placarA, pB=k.placarB;
     var rc=spec===1?'bkCardFinal':spec===2?'bkCard3':'bkCard';
-    var yN=y0+PY+7, yA=y0+PY+18, yB=y0+PY+33;
+    var yN=y0+PX+5, yA=y0+PX+16, yB=y0+PX+30;
     function tc(t){ if(!t) return 'bkTeamTbd'; if(conc) return t===venc?'bkTeamW':'bkTeamL'; return 'bkTeam'; }
     function sc(t){ if(conc) return t===venc?'bkScoreW':'bkScoreL'; return 'bkScore'; }
     var fA=flagCode(tA), fB=flagCode(tB);
-    var flagOffA=fA?FW+3:0, flagOffB=fB?FW+3:0;
-    var maxNW=CW-PX*2-26;
-    function tname(t,code,fo){ var lbl=t||(labelCruz(code)||'?'); return '<text class="'+tc(t)+'" x="'+(x0+PX+fo)+'" y="'+yA+'" textLength="'+Math.min(maxNW-fo,lbl.length*6.5)+'" lengthAdjust="spacingAndGlyphs">'+esc2(lbl)+'</text>'; }
-    function tname2(t,code,fo){ var lbl=t||(labelCruz(code)||'?'); return '<text class="'+tc(t)+'" x="'+(x0+PX+fo)+'" y="'+yB+'" textLength="'+Math.min(maxNW-fo,lbl.length*6.5)+'" lengthAdjust="spacingAndGlyphs">'+esc2(lbl)+'</text>'; }
-    var s='<rect class="'+rc+'" x="'+x0+'" y="'+y0+'" width="'+CW+'" height="'+CH+'" rx="5"/>';
-    s+='<text class="bkNum" x="'+(x0+PX)+'" y="'+yN+'">J'+esc2(k.num)+'</text>';
+    var foA=fA?FW+2:0, foB=fB?FW+2:0;
+    var mxNW=CW-PX*2-20;
+    function tn(t,code,fo,yy){ var lbl=t||(labelCruz(code)||'?'); return '<text class="'+tc(t)+'" x="'+(x0+PX+fo)+'" y="'+yy+'" textLength="'+Math.min(mxNW-fo,lbl.length*5.8)+'" lengthAdjust="spacingAndGlyphs">'+esc2(lbl)+'</text>'; }
+    var s='<rect class="'+rc+'" x="'+x0+'" y="'+y0+'" width="'+CW+'" height="'+CH+'" rx="4"/>';
+    s+='<text class="bkNum" x="'+(x0+PX)+'" y="'+yN+'" font-size="7.5">J'+esc2(k.num)+'</text>';
     if(fA) s+='<image href="https://flagcdn.com/w40/'+fA+'.png" x="'+(x0+PX)+'" y="'+(yA-FH+FPAD)+'" width="'+FW+'" height="'+FH+'" preserveAspectRatio="xMidYMid meet"/>';
-    s+=tname(tA,k.cA,flagOffA);
-    if(conc&&pA!=='') s+='<text class="'+sc(tA)+'" x="'+(x0+CW-PX)+'" y="'+yA+'" text-anchor="end">'+esc2(pA)+'</text>';
-    s+='<line x1="'+(x0+4)+'" y1="'+(y0+CH/2)+'" x2="'+(x0+CW-4)+'" y2="'+(y0+CH/2)+'" stroke="#edf0f4" stroke-width="0.8"/>';
+    s+=tn(tA,k.cA,foA,yA);
+    if(conc&&pA!=='') s+='<text class="'+sc(tA)+'" x="'+(x0+CW-PX)+'" y="'+yA+'" text-anchor="end" font-size="9">'+esc2(pA)+'</text>';
+    s+='<line x1="'+(x0+3)+'" y1="'+(y0+CH/2)+'" x2="'+(x0+CW-3)+'" y2="'+(y0+CH/2)+'" stroke="#edf0f4" stroke-width="0.7"/>';
     if(fB) s+='<image href="https://flagcdn.com/w40/'+fB+'.png" x="'+(x0+PX)+'" y="'+(yB-FH+FPAD)+'" width="'+FW+'" height="'+FH+'" preserveAspectRatio="xMidYMid meet"/>';
-    s+=tname2(tB,k.cB,flagOffB);
-    if(conc&&pB!=='') s+='<text class="'+sc(tB)+'" x="'+(x0+CW-PX)+'" y="'+yB+'" text-anchor="end">'+esc2(pB)+'</text>';
+    s+=tn(tB,k.cB,foB,yB);
+    if(conc&&pB!=='') s+='<text class="'+sc(tB)+'" x="'+(x0+CW-PX)+'" y="'+yB+'" text-anchor="end" font-size="9">'+esc2(pB)+'</text>';
     return s;
   }
 
-  // Conector em L: saída da direita de cy1, chega à esquerda em cy2
-  function conn(x1,cy1,x2,cy2){
-    var mx=x1+(x2-x1)*0.5;
+  // Conector esquerdo: x1=saída direita do card, x2=entrada esquerda do próximo
+  function connL(x1,cy1,x2,cy2){
+    var mx=(x1+x2)/2;
+    if(Math.abs(cy1-cy2)<1) return '<line class="bkConn" x1="'+x1+'" y1="'+cy1+'" x2="'+x2+'" y2="'+cy2+'"/>';
+    return '<polyline class="bkConn" points="'+x1+','+cy1+' '+mx+','+cy1+' '+mx+','+cy2+' '+x2+','+cy2+'"/>';
+  }
+  // Conector direito: x1=saída esquerda (borda esq do card), x2=entrada direita do card anterior
+  function connR(x1,cy1,x2,cy2){
+    var mx=(x1+x2)/2;
     if(Math.abs(cy1-cy2)<1) return '<line class="bkConn" x1="'+x1+'" y1="'+cy1+'" x2="'+x2+'" y2="'+cy2+'"/>';
     return '<polyline class="bkConn" points="'+x1+','+cy1+' '+mx+','+cy1+' '+mx+','+cy2+' '+x2+','+cy2+'"/>';
   }
 
-  var svg='<div class="bkWrap"><svg class="bkSvg" viewBox="0 0 '+svgW+' '+(cy3+CH+20)+'" xmlns="http://www.w3.org/2000/svg" style="width:100%;min-width:820px">';
+  var svg='<div class="bkWrap"><svg class="bkSvg" viewBox="0 0 '+svgW+' '+(cy3+CH+24)+'" xmlns="http://www.w3.org/2000/svg" style="width:100%;min-width:900px">';
 
-  var hdrs=['Rodada de 32','Rodada de 32','Oitavas','Oitavas','Quartas','Semifinal','Final'];
-  for(var c=0;c<NC;c++) svg+=hdr(colX[c],hdrs[c]);
+  // === FUNDOS DE QUADRANTE ===
+  // Esq: toda a col 0 em 2 quadrantes (s0-3 = Q1, s4-7 = Q2)
+  var q1y0=cy(0)-CH/2-2, q1y1=cy(3)+CH/2+2;
+  var q2y0=cy(4)-CH/2-2, q2y1=cy(7)+CH/2+2;
+  // Esq col0
+  svg+='<rect fill="#1a4971" fill-opacity="0.09" stroke="#1a4971" stroke-opacity="0.3" stroke-width="1" x="'+(colX[0]-2)+'" y="'+q1y0+'" width="'+(CW+4)+'" height="'+(q1y1-q1y0)+'" rx="4"/>';
+  svg+='<text font-size="7.5" font-weight="900" fill="#1a4971" fill-opacity="0.55" x="'+(colX[0]+CW/2)+'" y="'+(q1y1-3)+'" text-anchor="middle" letter-spacing=".5">Q1</text>';
+  svg+='<rect fill="#1e6b8a" fill-opacity="0.09" stroke="#1e6b8a" stroke-opacity="0.3" stroke-width="1" x="'+(colX[0]-2)+'" y="'+q2y0+'" width="'+(CW+4)+'" height="'+(q2y1-q2y0)+'" rx="4"/>';
+  svg+='<text font-size="7.5" font-weight="900" fill="#1e6b8a" fill-opacity="0.55" x="'+(colX[0]+CW/2)+'" y="'+(q2y1-3)+'" text-anchor="middle" letter-spacing=".5">Q2</text>';
+  // Dir col8
+  svg+='<rect fill="#1a7a5e" fill-opacity="0.09" stroke="#1a7a5e" stroke-opacity="0.3" stroke-width="1" x="'+(colX[8]-2)+'" y="'+q1y0+'" width="'+(CW+4)+'" height="'+(q1y1-q1y0)+'" rx="4"/>';
+  svg+='<text font-size="7.5" font-weight="900" fill="#1a7a5e" fill-opacity="0.55" x="'+(colX[8]+CW/2)+'" y="'+(q1y1-3)+'" text-anchor="middle" letter-spacing=".5">Q3</text>';
+  svg+='<rect fill="#7a4b1a" fill-opacity="0.09" stroke="#7a4b1a" stroke-opacity="0.3" stroke-width="1" x="'+(colX[8]-2)+'" y="'+q2y0+'" width="'+(CW+4)+'" height="'+(q2y1-q2y0)+'" rx="4"/>';
+  svg+='<text font-size="7.5" font-weight="900" fill="#7a4b1a" fill-opacity="0.55" x="'+(colX[8]+CW/2)+'" y="'+(q2y1-3)+'" text-anchor="middle" letter-spacing=".5">Q4</text>';
 
-  // Col 0 cards + conectores → col 2
-  c0.forEach(function(e){
+  // Linha divisória horizontal entre Q1/Q2
+  var yDiv=cy(3)+CH/2+GAP/2;
+  svg+='<line x1="0" y1="'+yDiv+'" x2="'+(colX[3]+CW)+'" y2="'+yDiv+'" stroke="#b9cde0" stroke-width="0.9" stroke-dasharray="4,3"/>';
+  svg+='<line x1="'+colX[5]+'" y1="'+yDiv+'" x2="'+(colX[8]+CW)+'" y2="'+yDiv+'" stroke="#b9cde0" stroke-width="0.9" stroke-dasharray="4,3"/>';
+
+  // === CABEÇALHOS ===
+  var hL=['Rodada de 32','Oitavas de Final','Quartas de Final','Semifinal','FINAL','Semifinal','Quartas de Final','Oitavas de Final','Rodada de 32'];
+  var hC=['#1F4E78','#1F4E78','#1F4E78','#444','#9a6500','#444','#1F4E78','#1F4E78','#1F4E78'];
+  for(var hi=0;hi<NC;hi++) svg+=hdrSvg(colX[hi],hL[hi],hC[hi]);
+
+  // === COL 0: R32-L (8 jogos em 8 slots) ===
+  // Q1 (slots 0-3): J74(s0), J77(s1), J73(s2), J75(s3)
+  // Q2 (slots 4-7): J81(s4), J82(s5), J83(s6), J84(s7)
+  var r32L=[{n:'74',s:0},{n:'77',s:1},{n:'73',s:2},{n:'75',s:3},
+            {n:'81',s:4},{n:'82',s:5},{n:'83',s:6},{n:'84',s:7}];
+  r32L.forEach(function(e){
     var k=g(e.n), cyCur=cy(e.s);
-    svg+=card(k,colX[0],cyCur,0);
-    // par: slots 0+1→J89, 2+3→J90, 4+5→J91, 6+7→J92
-    var oitIdx=Math.floor(e.s/2);
-    var oitMap=['89','90','91','92'];
-    var cyOit=slotCY(c2[oitIdx].s);
-    svg+=conn(colX[0]+CW,cyCur,colX[2],cyOit);
+    svg+=cardSvg(k,colX[0],cyCur,0);
+    // Conecta para Oitavas-L (col1): pares s0-1→J89, s2-3→J90, s4-5→J94, s6-7→J93
+    var oitTargets={0:cyR(0,1),1:cyR(0,1),2:cyR(2,3),3:cyR(2,3),4:cyR(4,5),5:cyR(4,5),6:cyR(6,7),7:cyR(6,7)};
+    svg+=connL(colX[0]+CW,cyCur,colX[1],oitTargets[e.s]);
   });
 
-  // Col 1 cards + conectores → col 3
-  c1.forEach(function(e){
+  // === COL 1: Oitavas-L (4 jogos) ===
+  // J89(s0-1)=W74+W77, J90(s2-3)=W73+W75, J94(s4-5)=W81+W82, J93(s6-7)=W83+W84
+  var oitL=[{n:'89',s:[0,1]},{n:'90',s:[2,3]},{n:'94',s:[4,5]},{n:'93',s:[6,7]}];
+  // Qta targets: J89+J90→J97(cyR0-3), J94+J93→J98(cyR4-7)
+  oitL.forEach(function(e){
+    var k=g(e.n), cyCur=slotCY(e.s);
+    svg+=cardSvg(k,colX[1],cyCur,0);
+    var qtaTgt=e.s[0]<4?cyR(0,3):cyR(4,7);
+    svg+=connL(colX[1]+CW,cyCur,colX[2],qtaTgt);
+  });
+
+  // === COL 2: Quartas-L ===
+  // J97=W89+W90 center=cyR(0,3), J98=W94+W93 center=cyR(4,7)
+  svg+=cardSvg(g('97'),colX[2],cyR(0,3),0);
+  svg+=connL(colX[2]+CW,cyR(0,3),colX[3],cyR(0,7));
+  svg+=cardSvg(g('98'),colX[2],cyR(4,7),0);
+  svg+=connL(colX[2]+CW,cyR(4,7),colX[3],cyR(0,7));
+
+  // === COL 3: Semi-L (J101) ===
+  svg+=cardSvg(g('101'),colX[3],cyR(0,7),0);
+  svg+=connL(colX[3]+CW,cyR(0,7),colX[4],cyR(0,7));
+
+  // === COL 4: FINAL (J104) ===
+  svg+=cardSvg(g('104'),colX[4],cyR(0,7),1);
+
+  // === COL 5: Semi-R (J102) ===
+  svg+=cardSvg(g('102'),colX[5],cyR(0,7),0);
+  // Conector J102 → Final (entra pela esquerda do Final)
+  svg+=connR(colX[5],cyR(0,7),colX[4]+CW,cyR(0,7));
+
+  // === COL 6: Quartas-R ===
+  // J99=W91+W92 center=cyR(0,3), J100=W95+W96 center=cyR(4,7)
+  svg+=cardSvg(g('99'),colX[6],cyR(0,3),0);
+  svg+=connR(colX[6],cyR(0,3),colX[5]+CW,cyR(0,7));
+  svg+=cardSvg(g('100'),colX[6],cyR(4,7),0);
+  svg+=connR(colX[6],cyR(4,7),colX[5]+CW,cyR(0,7));
+
+  // === COL 7: Oitavas-R (4 jogos) ===
+  // J91(s0-1)=W76+W78→J99, J92(s2-3)=W79+W80→J99, J95(s4-5)=W86+W88→J100, J96(s6-7)=W85+W87→J100
+  var oitR=[{n:'91',s:[0,1]},{n:'92',s:[2,3]},{n:'95',s:[4,5]},{n:'96',s:[6,7]}];
+  oitR.forEach(function(e){
+    var k=g(e.n), cyCur=slotCY(e.s);
+    svg+=cardSvg(k,colX[7],cyCur,0);
+    var qtaTgt=e.s[0]<4?cyR(0,3):cyR(4,7);
+    svg+=connR(colX[7],cyCur,colX[6]+CW,qtaTgt);
+  });
+
+  // === COL 8: R32-R (8 jogos espelhados) ===
+  // Q3 (slots 0-3): J76(s0),J78(s1),J79(s2),J80(s3) → J91,J92 (Oit col7 slots 0-3)
+  // Q4 (slots 4-7): J86(s4),J88(s5),J85(s6),J87(s7) → J95,J96 (Oit col7 slots 4-7)
+  var r32R=[{n:'76',s:0},{n:'78',s:1},{n:'79',s:2},{n:'80',s:3},
+            {n:'86',s:4},{n:'88',s:5},{n:'85',s:6},{n:'87',s:7}];
+  r32R.forEach(function(e){
     var k=g(e.n), cyCur=cy(e.s);
-    svg+=card(k,colX[1],cyCur,0);
-    var oitIdx=Math.floor(e.s/2);
-    var cyOit=slotCY(c3[oitIdx].s);
-    svg+=conn(colX[1]+CW,cyCur,colX[3],cyOit);
+    svg+=cardSvg(k,colX[8],cyCur,0);
+    var oitTargets={0:cyR(0,1),1:cyR(0,1),2:cyR(2,3),3:cyR(2,3),4:cyR(4,5),5:cyR(4,5),6:cyR(6,7),7:cyR(6,7)};
+    svg+=connR(colX[8],cyCur,colX[7]+CW,oitTargets[e.s]);
   });
 
-  // Col 2 (Oitavas A) cards + conectores → col 4
-  // J89,J90 → J97; J91,J92 → J99
-  var c2toQ=[0,0,2,2]; // índice em c4
-  c2.forEach(function(e,i){
-    var k=g(e.n), cyCur=slotCY(e.s);
-    svg+=card(k,colX[2],cyCur,0);
-    svg+=conn(colX[2]+CW,cyCur,colX[4],slotCY(c4[c2toQ[i]].s));
-  });
-
-  // Col 3 (Oitavas B) cards + conectores → col 4
-  // J94,J93 → J98; J95,J96 → J100
-  var c3toQ=[1,1,3,3];
-  c3.forEach(function(e,i){
-    var k=g(e.n), cyCur=slotCY(e.s);
-    svg+=card(k,colX[3],cyCur,0);
-    svg+=conn(colX[3]+CW,cyCur,colX[4],slotCY(c4[c3toQ[i]].s));
-  });
-
-  // Col 4 (Quartas) cards + conectores → col 5
-  // J97,J98 → J101; J99,J100 → J102
-  var c4toS=[0,0,1,1];
-  c4.forEach(function(e,i){
-    var k=g(e.n), cyCur=slotCY(e.s);
-    svg+=card(k,colX[4],cyCur,0);
-    svg+=conn(colX[4]+CW,cyCur,colX[5],slotCY(c5[c4toS[i]].s));
-  });
-
-  // Col 5 (Semis) cards + conectores → Final (col 6)
-  var cyFinal=slotCY([0,7]);
-  c5.forEach(function(e){
-    var k=g(e.n), cyCur=slotCY(e.s);
-    svg+=card(k,colX[5],cyCur,0);
-    svg+=conn(colX[5]+CW,cyCur,colX[6],cyFinal);
-  });
-
-  // Col 6: Final (centrado no bracket) + 3º (abaixo)
-  svg+=card(g('104'),colX[6],cyFinal,1);
-  svg+=card(g('103'),colX[6],cy3,2);
-  // Label "3° lugar" acima do card
-  svg+='<text class="bkHdrTxt" x="'+(colX[6]+CW/2)+'" y="'+(cy3-CH/2-3)+'" text-anchor="middle" font-size="9" fill="#8faac8">3° LUGAR</text>';
+  // 3º lugar (abaixo da Final)
+  svg+=cardSvg(g('103'),colX[4],cy3,2);
+  svg+='<text class="bkHdrTxt" x="'+(colX[4]+CW/2)+'" y="'+(cy3-CH/2-3)+'" text-anchor="middle" font-size="8.5" fill="#8faac8">3° LUGAR</text>';
 
   // Legenda
-  var lyg=cy3+CH/2+12;
-  svg+='<rect fill="#d4f0d6" x="4" y="'+lyg+'" width="9" height="9" rx="2"/>';
-  svg+='<text class="bkLegTxt" x="16" y="'+(lyg+8)+'">Classificado</text>';
-  svg+='<rect fill="#e8e8e8" x="100" y="'+lyg+'" width="9" height="9" rx="2"/>';
-  svg+='<text class="bkLegTxt" x="112" y="'+(lyg+8)+'">Eliminado</text>';
-  svg+='<rect fill="#dce3ec" x="190" y="'+lyg+'" width="9" height="9" rx="2"/>';
-  svg+='<text class="bkLegTxt" x="202" y="'+(lyg+8)+'">Cruzamento pendente</text>';
+  var lyg=cy3+CH/2+10;
+  svg+='<rect fill="#d4f0d6" x="4" y="'+lyg+'" width="8" height="8" rx="2"/>';
+  svg+='<text class="bkLegTxt" x="15" y="'+(lyg+7)+'">Classificado</text>';
+  svg+='<rect fill="#e8e8e8" x="90" y="'+lyg+'" width="8" height="8" rx="2"/>';
+  svg+='<text class="bkLegTxt" x="101" y="'+(lyg+7)+'">Eliminado</text>';
+  svg+='<rect fill="#dce3ec" x="170" y="'+lyg+'" width="8" height="8" rx="2"/>';
+  svg+='<text class="bkLegTxt" x="181" y="'+(lyg+7)+'">Cruzamento pendente</text>';
 
   svg+='</svg></div>';
 
